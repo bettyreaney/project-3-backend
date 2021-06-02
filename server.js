@@ -1,12 +1,12 @@
 // load modules
 const express = require ('express');
-const port = process.env.PORT || '3000';
-
-// load the env vars
-require('dotenv').config();
+const port = process.env.PORT || '3001';
 
 // initilize the app
 const app = express();
+
+// load the env vars
+require('dotenv').config();
 
 //connect to DB
 require('./config/database');
