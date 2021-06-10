@@ -11,6 +11,12 @@ const moneySchema = new Schema({
     },
     title: {
         type: String,
+    },
+    income: {
+        type: String,
+    },
+    expense: {
+        type: String,
     }
 }, { timestamps: true });
 
