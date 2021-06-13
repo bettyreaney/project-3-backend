@@ -22,8 +22,8 @@ function create(req, res) {
 }
 
 function deleteItem(req, res) {
-    Money.findByIdAndDelete(req.params.id, req.body, function() {
-        return res.redirect('/');
+    Money.findByIdAndDelete(req.params.id, function(err, item) {
+        index(req, res);
     })
 }
 
